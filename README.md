@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+create an app using Next js version 13.
+used style-component for styling components.
+redux-toolkit with localStorage.
 
-## Getting Started
+Account Balance:
+Display the user's current account balance prominently on the dashboard for quick and easy access.
 
-First, run the development server:
+Deposit Money:
+Users can deposit money by selecting from denominations of Rs. 100, Rs. 500, Rs. 1000, or Rs. 2000.
+A user-friendly interface allows users to enter the number of notes they wish to deposit for each denomination.
+Upon confirmation, the application updates the account balance accordingly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Withdraw Money:
+Users can initiate a withdrawal by entering the desired amount.
+The application performs validation to ensure the requested amount is available in the account balance.
+In case of insufficient funds, an error message is displayed.
+If the requested amount is valid, the application calculates and dispenses the minimum number of notes (Rs. 2000, Rs. 1000, Rs. 500, and Rs. 100) required to meet the withdrawal amount.
+The account balance is then updated based on the successful withdrawal.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+commands for run the project
+1. npm i
+2. npm run dev
+   
